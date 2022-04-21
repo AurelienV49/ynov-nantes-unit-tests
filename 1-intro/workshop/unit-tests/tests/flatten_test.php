@@ -10,4 +10,11 @@ class FlattenTest extends TestCase
     {
         $this->assertEqual(1337, 1337);
     }
+
+    public function test_insert()
+    {
+        $info = array(1, 2, [1, 2]);
+        $tempTracker = flatten($info);
+        $this->assertEquals($tempTracker, array(1, 2, [1, 2]));
+    }
 }
