@@ -8,13 +8,16 @@ class FlattenTest extends TestCase
 {
     public function test_something()
     {
-        $this->assertEqual(1337, 1337);
+        $this->assertEquals(1337, 1337);
     }
 
     public function test_insert()
     {
-        $info = array(1, 2, [1, 2]);
-        $tempTracker = flatten($info);
-        $this->assertEquals($tempTracker, array(1, 2, [1, 2]));
+        $stack = [];
+        array_push($stack, [1, 2, [1, 2]]);
+
+        $tempTracker = flatten($stack);
+
+        $this->assertEquals($tempTracker, [1, 2, [1, 2]], "-------------->>>> Les tableaux sont différents !\n");
     }
 }
