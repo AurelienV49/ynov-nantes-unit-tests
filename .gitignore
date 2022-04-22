@@ -3,3 +3,4 @@
 **/vendor
 **/coverage
 1-intro/workshop/e2e-tests/package-lock.json
+2-unit-tests/workshop/js/package-lock.json
