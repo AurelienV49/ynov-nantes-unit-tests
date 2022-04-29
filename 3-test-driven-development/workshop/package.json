@@ -1,0 +1,23 @@
+{
+    "name": "minesweeper-kata",
+    "version": "1.0.0",
+    "description": "Minesweeper kata in JavaScript with Jest",
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage"
+    },
+    "keywords": [
+        "kata",
+        "refactor",
+        "minesweeper"
+    ],
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "jest": "^24.9.0"
+    },
+    "dependencies": {
+        "readline-sync": "^1.4.10"
+    }
+}
