@@ -1,25 +1,26 @@
-const { setHeadlessWhen, setCommonPlugins } = require('@codeceptjs/configure');
+const { setHeadlessWhen, setCommonPlugins } = require("@codeceptjs/configure");
 
-const { cwd } = require('process');
+const { cwd } = require("process");
 
 setHeadlessWhen(process.env.HEADLESS);
 setCommonPlugins();
 
 exports.config = {
-  tests: './tests/**/*_test.js',
-  output: 'dist',
+  tests: "./tests/**/e2e.test.js",
+  output: "dist",
   include: {
-    I: './steps_file.js'
+    I: "./steps_file.js",
   },
   helpers: {
     Playwright: {
+      url: `file://${cwd()}`,
       waitForTimeout: 5000,
-      show: process.env.HEADLESS === 'true' ? false : true,
+      show: process.env.HEADLESS === "true" ? false : true,
       timeout: 5000,
     },
-    REST:{}
+    REST: {},
   },
   bootstrap: null,
   mocha: {},
-  name: 'integrations-e2e'
-}
+  name: "integrations-e2e",
+};

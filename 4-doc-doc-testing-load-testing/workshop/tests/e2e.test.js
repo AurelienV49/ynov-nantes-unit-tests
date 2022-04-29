@@ -1,12 +1,12 @@
-const CLIENT_URL = `/public/index.html`;
+const CLIENT_URL = `http://localhost:5000/`;
 
-Feature("Client");
+Feature("Todo Client");
 
-Scenario("Test client Page", ({ I }) => {
+Scenario("Test Todo client Page", ({ I }) => {
   I.amOnPage(CLIENT_URL);
 });
 
-Scenario("Create in database", ({ I }) => {
+Scenario("Create todo", ({ I }) => {
   I.amOnPage(CLIENT_URL);
 
   I.fillField("#newTODO", "test");
@@ -14,7 +14,7 @@ Scenario("Create in database", ({ I }) => {
   I.click("#create-todo");
 });
 
-Scenario("Create in database and complete", ({ I }) => {
+Scenario("Create todo and complete it ", ({ I }) => {
   I.amOnPage(CLIENT_URL);
 
   I.fillField("#newTODO", "test complete");
