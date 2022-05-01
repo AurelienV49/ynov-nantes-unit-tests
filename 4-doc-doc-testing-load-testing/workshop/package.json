@@ -1,36 +1,37 @@
 {
-  "name": "e-2-e-testing",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "start:dev": "nodemon server.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:e2e": "codeceptjs run"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "nodemon": "^1.18.9",
-    "mongoose": "^5.4.1",
-    "jest-cucumber": "^3.0.1",
-    "axios": "^0.27.2",
-    "jsdom": "^19.0.0",
-    "codeceptjs": "^3.3.2",
-    "playwright": "^1.21.1",
-    "supertest": "^6.2.3",
-    "swagger-ui-express": "^4.3.0",
-    "webdriverio": "^7.19.5"
-  },
-  "devDependencies": {
-    "jest": "^24.9.0",
-    "codeceptjs": "^3.3.0",
-    "playwright": "^1.21.1",
-    "webdriverio": "^7.19.5"
-  }
+    "name": "e-2-e-testing",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js",
+        "start:dev": "nodemon server.js",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "test:e2e": "codeceptjs run"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "body-parser": "^1.18.3",
+        "codeceptjs": "^3.3.2",
+        "express": "^4.16.4",
+        "jest-cucumber": "^3.0.1",
+        "jsdom": "^19.0.0",
+        "mongoose": "^5.4.1",
+        "nodemon": "^1.18.9",
+        "playwright": "^1.21.1",
+        "supertest": "^6.2.3",
+        "webdriverio": "^7.19.5"
+    },
+    "devDependencies": {
+        "codeceptjs": "^3.3.0",
+        "jest": "^24.9.0",
+        "playwright": "^1.21.1",
+        "swagger-jsdoc": "6.2.1",
+        "swagger-ui-express": "^4.3.0",
+        "webdriverio": "^7.19.5"
+    }
 }
